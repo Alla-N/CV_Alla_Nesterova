@@ -278,6 +278,11 @@ a:active, a:hover {
 }
 
 
+#about .intro-content a {
+    margin: 10px;
+}
+
+
 #about .btn{
 	text-transform: uppercase;
 	border-radius: 3px;
@@ -341,14 +346,16 @@ a:active, a:hover {
 	transform: scale(1.3);
 }
 
+
 .skill-line-element:hover:after { 
  content: attr(data-title); 
     position: absolute; 
-    left: 20%; top: -60%; 
-    background: #2196f3; 
+    left: 20%; top: 0; 
+    background: yellow; 
     font-size: 14px; 
     padding: 5px 10px; 
  	border-radius: 10%;
+    color: black;
 }
 
 

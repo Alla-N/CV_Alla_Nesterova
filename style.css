@@ -301,6 +301,13 @@ a:active, a:hover {
 
 
 /*---------------------------SKILLS-------------------------*/
+#skills{
+    text-align: center;
+}
+
+.skill-line-element img{
+    height: 80%;
+}
 
 .section-title {
     text-align: center;
@@ -419,7 +426,7 @@ a:active, a:hover {
     content: '';
     position: absolute;
     top: 0px;
-    right: -16%;
+    right: -60px;
     height: 0;
     width: 0;
     border: 30px solid transparent;
@@ -625,6 +632,19 @@ a:active, a:hover {
 
 }
 
+
+
+/*-----------------------------*/
+
+@media screen and (max-width: 767px){
+    .timeline-content:before, .timeline-content:after {
+    display: none;
+}
+.timeline-content {
+     margin-left: 0; 
+
+}
+}
 
 
 

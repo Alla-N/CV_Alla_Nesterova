@@ -139,6 +139,12 @@ a:active, a:hover {
     color: #000;
 }
 
+ select, option{
+    background: transparent;
+}
+
+
+
 
 
 /*------------------HEADER BOTTOM-----------*/

@@ -79,3 +79,24 @@ var colorButtons  = document.querySelectorAll('.changeColor');
   			}
   		}
 
+
+      /*----------сменя фото-----------------*/
+      
+      
+      var image=document.getElementById("myPhoto");
+      var imgs = ['images/photoCV.jpg','images/photoCV2.jpg', 'images/photoCV3.jpg', 'images/photoCV4.jpg', 'images/photoCV5.jpg']; 
+      var i=0;
+
+      image.onclick =  function(){
+
+          
+          image.src=imgs[i++];
+
+          if(i>=imgs.length){
+            i=0;
+          }
+
+        }
+
+      
+

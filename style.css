@@ -371,9 +371,16 @@ a:active, a:hover {
 .skills-icons ul{
     margin:auto auto;
     text-align: center;
-    font-size: 65px;
+    font-size: 15px;
     padding: 15px;
 }
+
+
+.skills-icons i{
+    font-size: 65px;
+
+}
+
 
 .skills-icons ul li{
     float:left;
@@ -396,6 +403,7 @@ a:active, a:hover {
 
 .skills-icons div{ 
 position: relative;
+margin: 15px;
 }
 
 
@@ -676,6 +684,10 @@ position: relative;
 
 /*----------switchColor--------------*/
 
+.color-icons-item{
+    color:#2196f3;
+}
+
 .switchColor>button{
 	display: inline-block;
 	width: 40px;
@@ -743,6 +755,7 @@ position: relative;
 .skills-icons ul li{
 
     width: 33.33%;
+    margin: 10px 0;
 }
 }
 

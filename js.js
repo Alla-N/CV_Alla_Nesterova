@@ -1,3 +1,5 @@
+
+
 /*-----прокрутка ссылок---------*/
 
 $(document).ready(function () {
@@ -5,7 +7,9 @@ $(document).ready(function () {
     
     //smoothscroll
     $('a[href^="#"]').click(function(){
+
     var target = $(this).attr('href');
+
     $('html, body').animate({scrollTop: $(target).offset().top-150}, 500);
     return false;
 

@@ -61,10 +61,19 @@ var colorButtons  = document.querySelectorAll('.changeColor');
   			buttonForChangeStyle.onclick =  function(){
   				let block = document.querySelectorAll('.backgroundClassic');
 
+          let icons = document.querySelectorAll('.social-icons-item');
+
   				block.forEach(function(element){
 
   					element.style.background = buttonForChangeStyle.id;
-  				})
+
+  				});
+
+          icons.forEach(function(element){
+
+            element.style.color = buttonForChangeStyle.id;
+
+          })
 
 
   			}

@@ -98,5 +98,17 @@ var colorButtons  = document.querySelectorAll('.changeColor');
 
         }
 
-      
+/*---------------прилипание header-----------------*/
 
+$(document).ready(function(){
+ $(window).scroll(function(){  
+ if ($(window).scrollTop() > 5 ){
+  $("#header-bottom").css("position", "fixed");
+  $("#header-bottom").css("top", "0");
+  $("#header-bottom").css("left", "0");
+  $("#header-bottom").css("right", "0");
+ 
+}else{
+$("#header-bottom").css("position", "static");
+}
+})})

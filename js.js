@@ -2,32 +2,20 @@
 
 /*-----прокрутка ссылок---------*/
 
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').click(function(){
+$(document).on('click', '.nav-link', function() {
+  var linkID = $(this).attr('href');
+  $('html, body').animate({ 
+    scrollTop: $(linkID).offset().top 
+  }, 1000);
 
-    // var target = $(this).attr('href');
+          $(".nav-link").removeClass('current');
+            
 
-    // $('html, body').animate({scrollTop: $(target).offset().top-150}, 500);
-    // return false;
+            $(this).addClass('current');
 
-        $(".nav-link").click(function () {
-            $(".nav-link").removeClass('current');
-        })
-        $(this).addClass('current');
-
-        // var target = this.hash,
-        //     menu = target;
-        // $target = $(target);
-        // $('html, body').stop().animate({
-        //     'scrollTop': $(target).offset().top-150}, 500, 'swing', function () {
-        //     window.location.hash = target;
-        //     $(document).on("scroll", onScroll);
-        // });
-    });
 });
+
+
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
@@ -84,7 +72,7 @@ var colorButtons  = document.querySelectorAll('.changeColor');
       
       
       var image=document.getElementById("myPhoto");
-      var imgs = ['images/photoCV.jpg','images/photoCV2.jpg', 'images/photoCV3.jpg', 'images/photoCV4.jpg', 'images/photoCV5.jpg']; 
+      var imgs = ['images/photoCV2.jpg', 'images/photoCV3.jpg', 'images/photoCV4.jpg', 'images/photoCV5.jpg','images/photoCV.jpg']; 
       var i=0;
 
       image.onclick =  function(){
@@ -99,16 +87,3 @@ var colorButtons  = document.querySelectorAll('.changeColor');
         }
 
 /*---------------прилипание header-----------------*/
-
-$(document).ready(function(){
- $(window).scroll(function(){  
- if ($(window).scrollTop() > 5 ){
-  $("#header-bottom").css("position", "fixed");
-  $("#header-bottom").css("top", "0");
-  $("#header-bottom").css("left", "0");
-  $("#header-bottom").css("right", "0");
- 
-}else{
-$("#header-bottom").css("position", "static");
-}
-})})

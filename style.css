@@ -326,9 +326,6 @@ a:active, a:hover {
     transition: all 0.8s ease-in-out; 
 }
 
-.profile-photo img:hover{
-	transform: scale(1.2);
-}
 
 
 #about .intro-content {
@@ -594,22 +591,33 @@ margin: 15px;
 
 /*----------------PORTFOLIO---------------*/
 
-.portfolio-item  {
-	position: relative;
-	padding: 0;
-	overflow: hidden;
+#portfolio h3{
+    color:#8a8a8b;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#portfolio  [class^="col"]{
     margin: 10px auto;
 }
 
-.portfolio-item h3 {
-    text-align: center;
+.portfolio-item {
+	position: relative;
+	padding: 0;
+	overflow: hidden;
+    
 }
+
 
 
 .portfolio-item img {
 	width: 100%;
 	-webkit-transition: .4s;
     transition: .4s ;
+}
+
+.portfolio-item figure{
+    margin: 0;
 }
 
 

@@ -117,19 +117,19 @@ a:active, a:hover {
 /*------------HEADER TOP-------------------*/
 
 #header-top {
-    min-height: 67px;
+    min-height: 52px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 #header-top .top-contact {
-    margin: 20px;
     color: rgba(0, 0, 0, 0.5);
 
 }
 
 #header-top .top-contact span {
-    float: right;
-    text-align: left;
-    margin-left: 40px;
+    float: right; 
+    margin: 0 10px;
     font-size: 16px;
     line-height: 27px;
     font-weight: 500;
@@ -140,9 +140,18 @@ a:active, a:hover {
     color: #000;
 }
 
+
+
  .language img{
     height: 15px;
     margin: 0 15px;
+    cursor: pointer;
+    opacity: 0.7;
+    -moz-transition: all 0.4s ease-in-out; 
+    -webkit-transition: all 0.4s ease-in-out; 
+    -o-transition: all 0.4s ease-in-out; 
+    -ms-transition: all 0.4s ease-in-out; 
+    transition: all 0.4s ease-in-out; 
 
  }
 
@@ -152,9 +161,19 @@ a:active, a:hover {
     border: none;
  }
 
- .language button:hover img{
+ .language label:hover img{
     transform: scale(1.2);
+    opacity: 1;
  }
+
+  .language input { 
+  display: none; 
+}
+
+.language input[type="radio"]:checked + label img { 
+    transform: scale(1.2);
+    opacity: 1;
+}
 
 
 
@@ -744,7 +763,7 @@ margin: 15px;
 
 .changeColorCV{
 	position: fixed;
-	top: 200px;
+	top: 250px;
 	right: 0;
 }
 

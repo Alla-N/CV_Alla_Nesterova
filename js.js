@@ -8,24 +8,24 @@ $(document).ready(function () {
     //smoothscroll
     $('a[href^="#"]').click(function(){
 
-    var target = $(this).attr('href');
+    // var target = $(this).attr('href');
 
-    $('html, body').animate({scrollTop: $(target).offset().top-150}, 500);
-    return false;
+    // $('html, body').animate({scrollTop: $(target).offset().top-150}, 500);
+    // return false;
 
         $(".nav-link").click(function () {
             $(".nav-link").removeClass('current');
         })
         $(this).addClass('current');
 
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $(target).offset().top-150}, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
+        // var target = this.hash,
+        //     menu = target;
+        // $target = $(target);
+        // $('html, body').stop().animate({
+        //     'scrollTop': $(target).offset().top-150}, 500, 'swing', function () {
+        //     window.location.hash = target;
+        //     $(document).on("scroll", onScroll);
+        // });
     });
 });
 

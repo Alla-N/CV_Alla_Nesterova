@@ -3,10 +3,10 @@
 /*-----прокрутка ссылок---------*/
 
 $(document).on('click', '.nav-link', function() {
-  var linkID = $(this).attr('href');
-  $('html, body').animate({ 
-    scrollTop: $(linkID).offset().top 
-  }, 1000);
+  // var linkID = $(this).attr('href');
+  // $('html, body').animate({ 
+  //   scrollTop: $(linkID).offset().top 
+  // }, 1000);
 
           $(".nav-link").removeClass('current');
             
@@ -72,7 +72,7 @@ var colorButtons  = document.querySelectorAll('.changeColor');
       
       
       var image=document.getElementById("myPhoto");
-      var imgs = ['images/photoCV2.jpg', 'images/photoCV3.jpg', 'images/photoCV4.jpg', 'images/photoCV5.jpg','images/photoCV.jpg']; 
+      var imgs = ['images/photoCV2.jpg', 'images/photoCV3.jpg','images/photoCV.jpg']; 
       var i=0;
 
       image.onclick =  function(){

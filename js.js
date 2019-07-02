@@ -1,6 +1,11 @@
 
 
 /*-----прокрутка ссылок---------*/
+$(document).ready(function() {
+
+$(document).on("scroll", onScroll);
+
+
 
 $(document).on('click', '.nav-link', function() {
   // var linkID = $(this).attr('href');
@@ -24,6 +29,7 @@ function onScroll(event){
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top-150 <= scrollPos && refElement.position().top-120 + refElement.height() > scrollPos)  {
             currLink.addClass("current");
+            
         }
         else{
             currLink.removeClass("current");
@@ -31,7 +37,7 @@ function onScroll(event){
     });
 }
 
-
+});
 
 /*------------смена стиля----------------*/
 
